@@ -17,9 +17,9 @@ def csv_file(reader):                       #Created funtion to do operations
     print("Error Code Count: ",error_dict)
     ip_list_values = list(ip_dict.values())     #Converting dictinary into 2 lists for values and keys
     ip_list_keys = list(ip_dict.keys())
-    print("Highest reapeted ip address is: ", ip_list_keys[ip_list_values.index(max(ip_list_values))], "count is: ", max(ip_list_values),"times")
-    print("Lowest reapeted ip address is: ", ip_list_keys[ip_list_values.index(min(ip_list_values))], "count is: ", min(ip_list_values), "times")
+    print("Highest reapeted ip address is: ", ip_list_keys[ip_list_values.index(max(ip_list_values))], "count is: ", max(ip_list_values),"times")       #Taking maximum index of values
+    print("Lowest reapeted ip address is: ", ip_list_keys[ip_list_values.index(min(ip_list_values))], "count is: ", min(ip_list_values), "times")       #Taking minimum index of values
 with open("C:\\Users\\Lenovo\\PycharmProjects\\pythonProject\\venv\\Scripts\\weblog.csv","r") as reader:        #File Reading
-    csv_file(reader)
+    csv_file(reader)                    #Calling the function
 
     
